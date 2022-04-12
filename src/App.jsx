@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import Nav from './component/Nav/Nav';
-import Home from './component/Home/Home';
-import Search from './component/Search/Search';
+import Nav from './component/Nav';
+import Home from './component/Home';
+import Search from './component/Search';
 
 function App() {
   return (
