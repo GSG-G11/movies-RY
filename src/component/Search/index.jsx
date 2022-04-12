@@ -13,6 +13,7 @@ function Search() {
       .then((results) => {
         setData(results.results);
       });
+      
     return () => { controller.abort(); setData([]); };
   }, [inputValue]);
   return (
