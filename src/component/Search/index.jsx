@@ -13,19 +13,17 @@ function Search() {
       .then((results) => {
         setData(results.results);
       });
-      
+
     return () => { controller.abort(); setData([]); };
   }, [inputValue]);
   return (
     <>
       <input type="text" onChange={inputHandle} value={inputValue} placeholder="Search" />
-      {data.map((film) => {
-        return (
-        <Card poster_path={film.poster_path} title={film.title} vote_average={film.vote_average} overview={film.overview} />
-        );
-      })}
+      {data.map((film) => console.log(film))}
     </>
   );
 }
 
 export default Search;
+{/* <Card poster_path={film.poster_path} title={film.title} vote_average={film.vote_average} overview={film.overview} /> */}
+
