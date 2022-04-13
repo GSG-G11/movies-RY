@@ -22,8 +22,9 @@ function Search() {
   return (
     <>
       <input type="text" onChange={inputHandle} value={inputValue} placeholder="Search" />
-      {console.log(data)}
-      {data.map((film) => <Card key={film.id} poster_path={film.poster_path} title={film.title} vote_average={film.vote_average} overview={film.overview} />)}
+      <div className='container'>
+      {data.map((film) => <Card key={film.id} film={film}/>)}
+    </div>
     </>
   );
 }
