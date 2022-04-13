@@ -20,12 +20,12 @@ function Search() {
   }, [inputValue]);
 
   return (
-    <>
+    <div className="container">
       <input type="text" onChange={inputHandle} value={inputValue} placeholder="Search" />
       <div className='container'>
       {data.map((film) => <Card key={film.id} film={film}/>)}
     </div>
-    </>
+    </div>
   );
 }
 
