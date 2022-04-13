@@ -1,0 +1,27 @@
+.header-main-div{
+  /* height: 50px; */
+  background-color: #0c0c0c;
+  padding-left: 3%;
+  border-radius: 10px;
+}
+.links-in-header{
+  padding: 2% 0px;
+}
+.header-title{
+  padding-top: 20px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  color: #f5c518;
+}
+.header-seconders{
+  padding-top: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #c7c7c6;
+  padding-left: 15px;
+}
+.header-seconders:hover{
+  color: whitesmoke;
+}

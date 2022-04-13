@@ -7,14 +7,13 @@ import Home from './component/Home';
 import Search from './component/Search';
 import TrendingMovies from './component/TrendingMovies';
 import TrendingSeries from './component/TrendingSeries';
-// import DataProvider from './component/Context/Provider';
 
 function App() {
   const [trendingMovies, setTrendingMovies] = useState([]);
   const [trendingTV, setTrendingTV] = useState([]);
   useEffect(() => {
     console.log('useEffect');
-    fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API_KEY}`)
+    fetch(`https://api.themoviedb.org/3/trending/movie/day?api_key=${process.env.REACT_APP_API_KEY}`)
       .then((res) => res.json())
       .then((results) => {
         setTrendingMovies(results.results);
@@ -28,18 +27,15 @@ function App() {
   }, []);
   return (
     <div>
-      {/* <Provider> */}
       <BrowserRouter>
         <Nav />
         <Routes>
-          {/* <Route path="/" element={<DataProvider><div><Home /></div></DataProvider>} /> */}
           <Route path="/" element={<Home trendingMovies={trendingMovies} trendingTV={trendingTV} />} />
           <Route path="/trendingMovies" element={<TrendingMovies trendingMovies={trendingMovies} />} />
           <Route path="/trendingSeries" element={<TrendingSeries trendingTV={trendingTV} />} />
           <Route path="/search" element={<Search />} />
         </Routes>
       </BrowserRouter>
-      {/* </Provider> */}
     </div>
   );
 }
