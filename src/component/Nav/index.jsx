@@ -1,15 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Nav.css';
 
 function Nav() {
   return (
-    <>
-      <p>Header Component</p>
-      <Link to="/">Home</Link>
-      <Link to="/search">Search</Link>
-      <Link to="/trendingMovies">Movies</Link>
-      <Link to="/trendingSeries">Series</Link>
-    </>
+    <div className="header-main-div">
+      <div className="links-in-header">
+        <Link to="/" className="header-title">Reflex</Link>
+        <Link to="/" className="header-seconders">Home</Link>
+        <Link to="/trendingMovies" className="header-seconders">Movies</Link>
+        <Link to="/trendingSeries" className="header-seconders">TV Shows</Link>
+        <Link to="/search" className="header-seconders">Search</Link>
+      </div>
+    </div>
+
   );
 }
 

@@ -1,0 +1,22 @@
+.container{
+  width: 95%;
+  margin: 20px auto;
+  /* background-color: antiquewhite; */
+  /* position: absolute; */
+}
+.title{
+  color: #f5c518;
+  font-size: 27px;
+  margin-top: 50px;
+}
+.go-to-certain-page{
+  background-color: #f5c518;
+  padding: 10px;
+  color: #141414;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  float: right;
+  margin-bottom: 20px;
+}
