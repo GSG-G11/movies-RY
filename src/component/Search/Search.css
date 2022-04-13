@@ -1,0 +1,12 @@
+.seacrh-class{
+    padding-left: 3%;
+    margin: 20px 0;
+}
+.seacrh-class span{
+    font-size: 18px;
+}
+.seacrh-class input{
+    margin-left: 2%;
+    height: 30px;
+    width: 200px;
+}
