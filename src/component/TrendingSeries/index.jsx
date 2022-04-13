@@ -4,7 +4,7 @@ import Card from '../Card';
 function TrendingSeries({ trendingTV }) {
   return (
     <div className="container">
-      {trendingTV.map((series) => <Card key={series.id} film={series}/>)}
+      {trendingTV.map((series) => <Card key={series.id} film={series} />)}
     </div>
   );
 }
