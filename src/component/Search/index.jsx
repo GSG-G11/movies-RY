@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../Card';
+import './Search.css';
 
 function Search() {
   const [inputValue, setInputValue] = useState('');
@@ -19,10 +20,15 @@ function Search() {
   }, [inputValue]);
 
   return (
-    <div className="container">
-      <input type="text" onChange={inputHandle} value={inputValue} placeholder="Search" />
-      {data.map((film) => <Card key={film.id} poster_path={film.poster_path} title={film.title} vote_average={film.vote_average} overview={film.overview} />)}
-    </div>
+    <>
+      <div className="seacrh-class">
+        <span>Search for any movie you want</span>
+        <input type="text" onChange={inputHandle} value={inputValue} placeholder="Search" />
+      </div>
+      <div className="container">
+        {data.map((film) => <Card key={film.id} film={film} />)}
+      </div>
+    </>
   );
 }
 

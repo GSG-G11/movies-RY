@@ -1,10 +1,10 @@
 import React from 'react';
+import Card from '../Card';
 
 function TrendingMovies({ trendingMovies }) {
   return (
     <div className="container">
-      <h1>TrendingMovies</h1>
-      {trendingMovies.map((series) => <p key={series.id}>{series.title}</p>)}
+      {trendingMovies.map((series) => <Card key={series.id} film={series}/>)}
     </div>
   );
 }
