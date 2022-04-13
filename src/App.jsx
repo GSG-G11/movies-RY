@@ -4,6 +4,8 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Nav from './component/Nav';
 import Home from './component/Home';
 import Search from './component/Search';
+import TrendingMovies from './component/TrendingMovies';
+import TrendingSeries from './component/TrendingSeries';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/trendingMovies" element={<TrendingMovies />} />
+          <Route path="/trendingSeries" element={<TrendingSeries />} />
         </Routes>
       </BrowserRouter>
     </div>
