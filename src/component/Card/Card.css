@@ -10,10 +10,11 @@
     margin: auto;
 }
 .card {
-  width: 30%;
-  height: 360px;
+  width: 25%;
+  height: 380px;
+  margin-left: 3%;
   padding: 2rem 1rem;
-  margin-bottom: 7%;
+  margin-bottom: 5%;
   background: #fff;
   position: relative;
   display: flex;
@@ -54,7 +55,7 @@
 .card .info{
     position: relative;
     z-index: 3;
-    color: #fff;
+    color: #141414;
     opacity: 1;
     transform: translateY(10px);
     transition: 0.5s all;

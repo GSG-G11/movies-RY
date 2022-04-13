@@ -6,7 +6,7 @@
   color: #f5c518;
   font-size: 27px;
   margin-top: 50px;
-  padding-left: 3%;
+  padding-left: 7%;
 }
 .go-to-certain-page{
   background-color: #f5c518;
@@ -18,4 +18,5 @@
   text-decoration: none;
   float: right;
   margin-right: 4%;
+  margin-top: -50px;
 }
