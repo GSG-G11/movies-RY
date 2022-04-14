@@ -1,0 +1,24 @@
+.not-found-container{
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.not-found-container h2{
+  font-size: 40px;
+  font-weight: 600;
+}
+.not-found-container p{
+  font-size: 25px;
+  font-weight: 400;
+}
+.not-found-home{
+  background-color: #f5c518;
+  padding: 10px;
+  color: #141414;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+}

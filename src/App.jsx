@@ -7,6 +7,7 @@ import Home from './component/Home';
 import Search from './component/Search';
 import TrendingMovies from './component/TrendingMovies';
 import TrendingSeries from './component/TrendingSeries';
+import NotFound from './component/NotFound';
 
 function App() {
   const [trendingMovies, setTrendingMovies] = useState([]);
@@ -34,6 +35,7 @@ function App() {
           <Route path="/trendingMovies" element={<TrendingMovies trendingMovies={trendingMovies} />} />
           <Route path="/trendingSeries" element={<TrendingSeries trendingTV={trendingTV} />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
